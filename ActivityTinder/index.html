@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>ActivityTinder</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 1. Load libraries -->
+    <script src="https://npmcdn.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://npmcdn.com/zone.js@0.6.12?main=browser"></script>
+    <script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
+
+    <script src="https://npmcdn.com/rxjs@5.0.0-beta.6/bundles/Rx.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/core/bundles/core.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/common/bundles/common.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/compiler/bundles/compiler.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+    <script src="https://npmcdn.com/@angular/router-deprecated/bundles/router-deprecated.umd.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyB0-6SnbzjxXn1uVeLrC0d75lOUsft8lIY",
+        authDomain: "activitytinder.firebaseapp.com",
+        databaseURL: "https://activitytinder.firebaseio.com",
+        storageBucket: "activitytinder.appspot.com",
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="app/data.service.js"></script>
+    <script src="app/activity-tinder.component.js"></script>
+    <script src="app/activity-login.component.js"></script>
+    <script src="app/activity-create.component.js"></script>
+    <script src="app/activity-joined.component.js"></script>
+    <script src="app/main.js"></script>
+  </head>
+
+  <body>
+    <a id="sidebar"></a>
+    <h1>Let's Swipe</h1>
+    <a href="#login">Log-in to get started</a><br>
+    <a href="#create">Create new activities</a><br>
+    <a href="#joined">See your upcomming activities</a><br>
+    <a href="#main">Tinder it!</a><br>
+
+    <hr>
+    <h4 id="login">Get going now</h4>
+    <logging-in>You broke it Josh...</logging-in>
+
+    <hr>
+    <h4 id="create">What are you up to?</h4>
+    <createActivity>You broke it Oliver...</createActivity>
+
+    <hr>
+    <h4 id="joined">Scheduled</h4>
+    <joined-activities>You broke it Nick...</joined-activities>
+
+
+    <hr>
+    <h4 id="main">Let's Tinder everything not everyone</h4>
+    <tindering>You broke it Ben and Rene...</tindering>
+  </body>
+
+</html>

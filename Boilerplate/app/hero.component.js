@@ -1,0 +1,26 @@
+(function(app) {
+
+  function ActivityComponent() {
+    this.title = "Activity Detail";
+  }
+
+  ActivityComponent.annotations = [
+    new ng.core.Component({
+      selector: 'hero-view',
+      template: '<h1>Activity: {{getActivityName()}}</h1>'
+    })
+  ];
+  ActivityComponent.prototype.getActicityName =
+    function() {
+      return 'running';
+    };
+
+  app.ActivityComponent = ActivityComponent;
+
+})(window.app = window.app || {});
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

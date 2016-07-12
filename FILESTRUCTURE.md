@@ -1,3 +1,5 @@
+FOR LATER USE!!!!
+
 app/
 ----- shared/   // acts as reusable components or partials of our site
 ---------- sidebar/
