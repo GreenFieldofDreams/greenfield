@@ -9,8 +9,8 @@
   };
   DataService.prototype.getJoinedActivities = function(cb) {
   	firebase.database().ref('activities').once('value').then(function(snapshot) {
-      cb(snapshot.val());
-    });
+      cb.call(this, snapshot.val());
+    }.bind(this));
   };
 
   DataService.prototype.enterNewActivities = function(activity) {
