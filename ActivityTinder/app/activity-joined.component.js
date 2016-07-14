@@ -3,18 +3,10 @@
   function ActivityComponent(dataService) {
     // Invoke service and save to components name space
     this.name = dataService.getActivity();
-    // this.activities = [];
+    this.activities = undefined;
 
-    // Quick and dirty way to pass this to dataservice
-    var that = this;
-    dataService.getJoinedActivities(function(data) {
-      //  var temp = [];
-      //  for(let item of data) {
-      //   if(item) {
-      //     temp.push(item);
-      //   }
-      // }
-      that.activities = data;
+    dataService.getJoinedActivities.call(this, function(data) {
+      this.activities = data;
     });
   }
   // Declare components injectables
