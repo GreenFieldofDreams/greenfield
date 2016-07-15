@@ -4,7 +4,7 @@
     ng.core.Component({
       selector: 'logging-in',
       template: `
-      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" (submit)="login()" ></div>
+      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" (click)="login()" ></div>
       `
     })
     .Class({
@@ -26,4 +26,6 @@
       }
     })
 })(window.app = window.app || {});
+
+
 

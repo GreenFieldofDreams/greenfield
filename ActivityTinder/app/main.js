@@ -9,7 +9,6 @@
     bootstrap(app.ActivityJoinedComponent, [app.DataService]);
     bootstrap(app.ActivityTinderComponent, [app.DataService]);
     bootstrap(app.ActivityLoginComponent, [app.DataService]);
-    bootstrap(app.ActivityTinderComponent, [app.DataService]);
   });
 
 })(window.app = window.app || {});
